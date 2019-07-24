@@ -1,0 +1,13 @@
+{
+ :paths ["src"]
+ :aliases {
+           :dev {
+                 :extra-deps  {midje {:mvn/version "1.9.9"}}
+                 :extra-paths ["test"]}
+           :test {
+                  :extra-deps  {midje {:mvn/version "1.9.9"}}
+                  :extra-paths ["test"]}}
+ :deps {
+        org.clojure/clojure {:mvn/version "1.10.1"}
+        org.apache.commons/commons-compress {:mvn/version "1.18"}
+        org.tukaani/xz {:mvn/version "1.8"}}}
